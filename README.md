@@ -7,7 +7,7 @@
 **Track:** Data Engineering  
 **Duration:** 12 Weeks  
 **Team:** 16  
-**Students:** Durga Chandana, [Student 2], [Student 3]  
+**Students:** Durga Chandana, Jakki Bharani,Vallapureddy Sai Shivani  
 **AI Teammate:** Used responsibly for explanation, debugging, review, and documentation support.
 
 ---
