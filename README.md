@@ -1,4 +1,4 @@
-# [PROJECT TITLE]
+# PlacementIQ: Campus Career Analytics 
 
 > **Student note:** Start with `00_START_HERE.md` and `00_TEMPLATE_INDEX.md`. The placeholder files inside this repo are the templates.
 
@@ -13,8 +13,9 @@
 ---
 
 ## 1. Project Summary
+PlacementIQ is a real-time data engineering project that analyzes campus placement activities using streaming data. It continuously collects and processes placement-related events such as student registrations, interview updates, test scores, and job offers. The system uses a streaming data pipeline to provide live insights into placement trends and recruiter activity. Interactive dashboards help placement officers monitor key metrics and make data-driven decisions. The project demonstrates scalable data ingestion, real-time processing, and analytics using modern data engineering technologies. It enables faster reporting, improved decision-making, and efficient management of campus placement operations.
 
-Write 5–8 lines explaining the assigned project.
+
 
 Example structure:
 
