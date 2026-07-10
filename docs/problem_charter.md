@@ -1,8 +1,8 @@
 # Problem Charter
 
 **Week:** 1  
-**Owner(s):** [Student names]  
-**Project:** [Project title]
+**Owner(s):** Jakki Bharani, Durga Chandana, Vallapureddy sai shivani 
+**Project:** PlacementIQ: Campus Career Analytics
 
 ---
 
