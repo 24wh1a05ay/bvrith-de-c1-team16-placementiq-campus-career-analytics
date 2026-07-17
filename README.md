@@ -13,14 +13,17 @@
 ---
 
 ## 1. Project Summary
-PlacementIQ is a real-time data engineering project that analyzes campus placement activities using streaming data. It continuously collects and processes placement-related events such as student registrations, interview updates, test scores, and job offers. The system uses a streaming data pipeline to provide live insights into placement trends and recruiter activity. Interactive dashboards help placement officers monitor key metrics and make data-driven decisions. The project demonstrates scalable data ingestion, real-time processing, and analytics using modern data engineering technologies. It enables faster reporting, improved decision-making, and efficient management of campus placement operations.
+Fully synthetic campus career analytics: skills, interviews, company pipeline, offer trends, readiness — and live interview-
+day events. You will turn messy placement-season files into a trusted lakehouse pipeline and a decision dashboard, then
+prove every step on GitHub.
 
 
 
 Example structure:
 
-- **Domain:** [Urban Mobility / IPL Matchday / Weather / etc.]
-- **Core engineering problem:** [What raw data needs to become trusted insight?]
+- **Domain:** Education / career readiness — a fictional institute; deliberately fully synthetic (sensitive, person-
+linked domain)
+- **Core engineering problem:** Converting messy, inconsistent placement data into trusted, decision-ready insights through a reliable data pipeline
 - **Main pipeline:** Raw Sources → Bronze → Silver → Data Quality → Gold → Power BI → Streaming Simulation
 - **Final outcome:** GitHub repo, Databricks notebooks, Gold outputs, Power BI dashboard, streaming simulation, final demo.
 
