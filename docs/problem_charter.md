@@ -9,7 +9,8 @@
 
 ## 1. Problem Context
 
-Explain the domain in simple language.
+Education / career readiness — a fictional institute; deliberately fully synthetic (sensitive, person-
+linked domain)
 
 Prompts:
 
@@ -22,20 +23,21 @@ Prompts:
 
 ## 2. Engineering Problem
 
-Write the data engineering problem clearly.
+PlacementIQ
+Campus Career Analytics
 
-Example format:
-
-> The project must convert multiple raw source files into trusted Bronze, Silver, Data Quality, Gold, and dashboard-ready outputs using Databricks and Power BI.
-
----
+Fully synthetic campus career analytics: skills, interviews, company pipeline, offer trends, readiness — and live interview-
+day events. You will turn messy placement-season files into a trusted lakehouse pipeline and a decision dashboard, then prove every step on GitHub.
+The project convert multiple raw source files into trusted Bronze, Silver, Data quality, Gold, and dashbord-ready outputs using Databricks and Power BI.
 
 ## 3. Users / Stakeholders
 
 | User / Stakeholder | What they need from the data |
 |---|---|
-| [Example: Operations Head] | [Example: View daily demand and service issues] |
-| [Example: Analyst] | [Example: Compare trends and investigate failures] |
+| Training & Placement Officer | Identify skill gaps affecting placement offers by branch and CGPA band. |
+| Head of Department | Track where students are eliminated in the placement process (aptitude, technical, or HR rounds). |
+| Corporate Relations Lead | Analyze company hiring efficiency and overall recruitment pipeline health. |
+| Placement Cell Coordinator | Monitor live interview statuses (scheduled, in progress, and completed) on drive day. |
 
 ---
 
@@ -60,12 +62,11 @@ List what the team will not build.
 
 Examples:
 
-- No production application
-- No real customer data
-- No payment gateway integration
-- No copied internet project submission
-- No fake screenshots or unexplained AI-generated work
-
+- A placement portal, resume screener, or student-ranking tool
+- Real student, college, or company records — not even as samples
+- Charts drawn from raw form exports
+- A big-reveal project that appears in Week 11
+- Unexplained AI-generated notebooks
 ---
 
 ## 6. Success Criteria
