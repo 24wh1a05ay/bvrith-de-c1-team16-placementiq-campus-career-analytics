@@ -1,6 +1,6 @@
 # Data Quality Summary
 
-**Week:** 6
+**Week:** 2
 
 
 **Purpose:** Summarize data quality rules, failures and business impact.
