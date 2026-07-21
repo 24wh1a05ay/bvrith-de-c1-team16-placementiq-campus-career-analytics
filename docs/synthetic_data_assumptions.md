@@ -15,11 +15,11 @@ This project uses synthetic educational data only. It must not be presented as r
 
 | Area | Assumption |
 |---|---|
-| Geography / scope | [Example: Hyderabad and nearby regions] |
-| Time period | [Example: July to September 2026] |
-| Source systems | [Example: Two different operational feeds] |
-| Event types | [Example: booking, scan, alert, transaction] |
-| Reference data | [Example: zones, categories, products, venues] |
+| Geography / scope | Hyderabad and nearby engineering colleges |
+| Time period | Academic Years 2023–2026 |
+| Source systems | Student Information System, Attendance Management System, Placement Portal, and Company Recruitment Records |
+| Event types | Student registration, attendance, certification, internship, placement, interview, and offer events |
+| Reference data | Departments, companies, job roles, skills, certifications, and academic semesters |
 
 ---
 
@@ -27,10 +27,10 @@ This project uses synthetic educational data only. It must not be presented as r
 
 | File | Approximate Rows | Reason |
 |---|---:|---|
-| `[source_file_1].csv` | [rows] | [reason] |
-| `[source_file_2].csv` | [rows] | [reason] |
-| `[reference_file].csv` | [rows] | [reason] |
-| `[streaming_events].json` | [rows] | [reason] |
+| `students.csv` | 5,000 | Represents student academic records |
+| `placements.csv` | 1,800 | Represents placement and offer details |
+| `companies.csv` | 120 | Contains company master information |
+| `placement_events.json` | 10,000 | Simulates interview, application, and placement event streams |
 
 ---
 
@@ -50,8 +50,8 @@ This project uses synthetic educational data only. It must not be presented as r
 
 Before using generated data, the team must check:
 
-- Row counts are reasonable.
-- Key fields exist.
-- Dates and numeric values look realistic.
-- Controlled defects exist but do not dominate the dataset.
-- Source files are different enough to require real standardization.
+- Row counts are realistic for a medium-sized engineering college.
+- All required key fields (Student_ID, Company_ID, Placement_ID) are present.
+- Dates, CGPA, attendance, package, and numeric values are within realistic ranges.
+- Controlled data quality defects exist in small proportions for testing validation rules.
+- Source files contain sufficient variation to require data cleaning, standardization, and integration before analytics.
