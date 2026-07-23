@@ -1,0 +1,31 @@
+skill_id,skill_name,skill_category,priority_flag,proficiency_threshold,active_flag
+SK0001,Python,Programming,N,3,Y
+SK0002,Java,Programming,N,2,Y
+SK0003,C++,Programming,N,4,Y
+SK0004,JavaScript,Programming,Y,2,Y
+SK0005,SQL,Programming,N,3,Y
+SK0006,R,Programming,N,4,Y
+SK0007,Scala,Programming,N,3,Y
+SK0008,C#,Programming,Y,0,Y
+SK0009,Go,Programming,N,3,Y
+SK0010,Kotlin,Programming,N,3,Y
+SK0011,TypeScript,Programming,N,4,Y
+SK0012,Bash,Programming,Y,3,Y
+SK0013,Spark SQL,Data Engineering,N,3,Y
+SK0014,PySpark,Data Engineering,N,4,Y
+SK0015,Delta Lake,Data Engineering,Y,3,Y
+SK0016,Data Modeling,Data Engineering,Y,2,Y
+SK0017,ETL Design,Data Engineering,N,3,Y
+SK0018,Data Quality,Data Engineering,Y,3,Y
+SK0019,Structured Streaming,Data Engineering,N,2,Y
+SK0020,Lakehouse,Data Engineering,Y,2,Y
+SK0021,Parquet,Data Engineering,Y,4,Y
+SK0022,JSON Processing,Data Engineering,N,3,Y
+SK0023,Workflow Orchestration,Data Engineering,N,2,Y
+SK0024,Data Lineage,Data Engineering,Y,2,Y
+SK0025,Schema Evolution,Data Engineering,N,3,Y
+SK0026,Data Warehousing,Data Engineering,N,2,Y
+SK0027,Query Optimization,Data Engineering,Y,2,Y
+SK0028,Azure Fundamentals,Cloud & DevOps,Y,4,Y
+SK0029,AWS Fundamentals,Cloud & DevOps,N,3,Y
+SK0030,GCP Fundamentals,Cloud & DevOps,N,3,Y
