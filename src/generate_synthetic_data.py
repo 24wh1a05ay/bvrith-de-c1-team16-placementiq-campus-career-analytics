@@ -31,10 +31,10 @@ STREAMING_DIR.mkdir(parents=True, exist_ok=True)
 
 def generate_reference_file() -> None:
     """Create a small reference file. Replace fields with project-specific values."""
-    output_path = RAW_DIR / "reference_master.csv"
+    output_path = RAW_DIR / "companies.csv"
     rows = [
-        {"reference_id": "REF-001", "reference_name": "Sample A", "category": "Category 1"},
-        {"reference_id": "REF-002", "reference_name": "Sample B", "category": "Category 2"},
+         {"company_id": "CMP001", "company_name": "TCS", "industry": "IT"},
+         {"company_id": "CMP002", "company_name": "Infosys", "industry": "IT"},
     ]
 
     with output_path.open("w", newline="", encoding="utf-8") as f:
@@ -45,10 +45,17 @@ def generate_reference_file() -> None:
 
 def generate_source_file(row_count: int = 100) -> None:
     """Create a simple raw source file. Replace fields based on assigned project."""
-    output_path = RAW_DIR / "source_events_raw.csv"
+   output_path = RAW_DIR / "students.csv"
     start_time = datetime(2026, 7, 3, 9, 0, 0)
 
-    fieldnames = ["source_record_id", "reference_id", "event_timestamp", "event_type", "amount", "status"]
+    fieldnames = fieldnames = [
+    "student_id",
+    "student_name",
+    "degree",
+    "branch",
+    "graduation_year",
+    "company_id"
+]
     statuses = ["completed", "pending", "cancelled"]
     event_types = ["type_a", "type_b", "type_c"]
 
@@ -59,12 +66,12 @@ def generate_source_file(row_count: int = 100) -> None:
         for i in range(1, row_count + 1):
             ts = start_time + timedelta(minutes=random.randint(0, 3000))
             writer.writerow({
-                "source_record_id": f"SRC-{i:06d}",
-                "reference_id": random.choice(["REF-001", "REF-002", "REF-999"]),  # REF-999 is intentional defect
-                "event_timestamp": ts.isoformat(),
-                "event_type": random.choice(event_types),
-                "amount": round(random.uniform(10, 500), 2),
-                "status": random.choice(statuses),
+                "student_id": f"STU{i:04d}",
+                "student_name": f"Student{i}",
+                "degree": "B.Tech",
+                "branch": random.choice(["CSE", "ECE", "IT"]),
+                "graduation_year": random.choice([2025, 2026, 2027]),
+                "company_id": random.choice(["CMP001", "CMP002"])
             })
 
 
@@ -78,7 +85,12 @@ def generate_streaming_events(batch_number: int = 1, event_count: int = 25) -> N
             event = {
                 "event_id": f"EVT-{batch_number:03d}-{i:05d}",
                 "event_timestamp": (start_time + timedelta(seconds=i * 30)).isoformat(),
-                "event_type": random.choice(["alert", "update", "transaction"]),
+                "event_type": random.choice([
+                    "APPLICATION_SUBMITTED",
+                    "INTERVIEW_SCHEDULED",
+                    "INTERVIEW_COMPLETED",
+                    "OFFER_RELEASED"
+                ]),
                 "entity_id": f"ENT-{random.randint(1, 50):04d}",
                 "severity": random.choice(["low", "medium", "high"]),
             }
