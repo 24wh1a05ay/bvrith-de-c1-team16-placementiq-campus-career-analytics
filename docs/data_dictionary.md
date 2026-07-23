@@ -9,19 +9,29 @@
 
 | File Name | Grain | Purpose | Approx. Rows | Notes |
 |---|---|---|---:|---|
-| `[source_file_1].csv` | One row per [entity/event] | [Purpose] | [rows] | [notes] |
-| `[source_file_2].csv` | One row per [entity/event] | [Purpose] | [rows] | [notes] |
-| `[reference_file].csv` | One row per [reference item] | [Purpose] | [rows] | [notes] |
-| `[streaming_events].json` | One row per event | Streaming simulation | [rows] | JSON event files |
+| `students.json` | One row per student | Student master data | Synthetic | Contains nested skills and applications |
+| `interviews.parquet` | One row per interview | Interview records | Synthetic | Batch source |
+| `companies.csv` | One row per company | Company reference | Synthetic | Reference data |
+| `skills.csv` | One row per skill | Sill reference | Synthetic | Reference data |
+| `interview_status_event.json` | One row per event | Streaming simulation | Synthetic | JSON event stream |
 
 ---
 
-## 2. Raw File Schema: `[source_file_1].csv`
+## 2. Raw File Schema: `students.json`
 
-| Field Name | Data Type | Required? | Example | Description |
-|---|---|---|---|---|
-| `source_id` | string | Yes | `SRC-0001` | Unique source record ID |
-| `[field_name]` | string | Yes/No | `[example]` | [description] |
+| Field Name      | Data Type     | Required? | Example     | Description           |
+| --------------- | ------------- | --------- | ----------- | --------------------- |
+| student_id      | STRING        | Yes       | STU0001     | Synthetic student key |
+| degree          | STRING        | Yes       | B.Tech      | Student degree        |
+| branch          | STRING        | Yes       | CSE         | Student branch        |
+| graduation_year | INT           | Yes       | 2027        | Graduation year       |
+| cohort          | STRING        | Yes       | C1          | Student cohort        |
+| readiness_band  | STRING        | Yes       | Ready       | Placement readiness   |
+| eligible_flag   | STRING        | Yes       | Y           | Placement eligibility |
+| student_skills  | ARRAY<STRUCT> | Yes       | [...]       | Student skills        |
+| applications    | ARRAY<STRUCT> | Yes       | [...]       | Student applications  |
+| source_system   | STRING        | Yes       | PlacementIQ | Source label          |
+
 
 ---
 
