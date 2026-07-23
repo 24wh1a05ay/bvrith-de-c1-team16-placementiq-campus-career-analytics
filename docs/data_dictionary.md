@@ -35,19 +35,27 @@
 
 ---
 
-## 3. Raw File Schema: `[source_file_2].csv`
+## 3. Raw File Schema: `interviews.parquet`
 
-| Field Name | Data Type | Required? | Example | Description |
-|---|---|---|---|---|
-| `source_id` | string | Yes | `SRC2-0001` | Unique source record ID |
+| Field Name       | Data Type | Required? | Example    | Description     |
+| ---------------- | --------- | --------- | ---------- | --------------- |
+| interview_id     | STRING    | Yes       | INT0001    | Interview ID    |
+| application_id   | STRING    | Yes       | APP0001    | Application ID  |
+| company_id       | STRING    | Yes       | CMP001     | Company ID      |
+| interview_date   | DATE      | Yes       | 2026-07-20 | Interview date  |
+| interview_round  | STRING    | Yes       | Technical  | Interview round |
+| interview_result | STRING    | Yes       | Selected   | Result          |
 
 ---
 
-## 4. Reference File Schema
+## 4. Reference File Schema: `companies.csv`
 
-| Field Name | Data Type | Required? | Example | Description |
-|---|---|---|---|---|
-| `reference_id` | string | Yes | `REF-001` | Reference key |
+| Field Name   | Data Type | Required? | Example   | Description      |
+| ------------ | --------- | --------- | --------- | ---------------- |
+| company_id   | STRING    | Yes       | CMP001    | Company ID       |
+| company_name | STRING    | Yes       | TCS       | Company name     |
+| industry     | STRING    | Yes       | IT        | Industry         |
+| location     | STRING    | Yes       | Hyderabad | Company location |
 
 ---
 
@@ -56,21 +64,25 @@
 Final Silver table name:
 
 ```text
-silver_[project_specific_table_name]
+silver_students
 ```
 
-| Silver Field | Data Type | Source Mapping | Business Meaning |
-|---|---|---|---|
-| `record_id` | string | `[source field]` | Canonical record ID |
-| `event_date` | date | `[source field]` | Date used for analytics |
-| `[silver_field]` | [type] | [mapping] | [meaning] |
+| Silver Field    | Data Type | Source Mapping           | Business Meaning    |
+| --------------- | --------- | ------------------------ | ------------------- |
+| student_id      | STRING    | students.student_id      | Student identifier  |
+| degree          | STRING    | students.degree          | Degree              |
+| branch          | STRING    | students.branch          | Branch              |
+| graduation_year | INT       | students.graduation_year | Graduation year     |
+| readiness_band  | STRING    | students.readiness_band  | Placement readiness |
+
 
 ---
 
 ## 6. Streaming Event Schema
 
-| Field Name | Data Type | Required? | Example | Description |
-|---|---|---|---|---|
-| `event_id` | string | Yes | `EVT-0001` | Unique event ID |
-| `event_timestamp` | timestamp | Yes | `2026-07-03T10:15:00+05:30` | Event time |
-| `event_type` | string | Yes | `[event type]` | Event category |
+| Field Name      | Data Type | Required? | Example                   | Description    |
+| --------------- | --------- | --------- | ------------------------- | -------------- |
+| event_id        | STRING    | Yes       | EVT001                    | Event ID       |
+| event_timestamp | TIMESTAMP | Yes       | 2026-07-03T10:15:00+05:30 | Event time     |
+| event_type      | STRING    | Yes       | INTERVIEW_STATUS_UPDATED  | Event category |
+
