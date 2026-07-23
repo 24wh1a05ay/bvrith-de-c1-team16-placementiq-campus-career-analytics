@@ -1,7 +1,7 @@
 # Week 02 Log — Dataset Design + Data Dictionary
 
 **Week:** 2  
-**Date range:** 23 July 2026 – 29 July 2026 
+**Date range:** 17 July 2026 – 24 July 2026 
 **Team:** 16 
 **Project:** PlacementIQ Campus Career Analytics
 
