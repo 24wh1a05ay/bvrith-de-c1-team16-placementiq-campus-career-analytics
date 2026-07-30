@@ -42,7 +42,7 @@ Profile and understand the PlacementIQ source datasets before building the Bronz
 | Blocker | Impact | Help Needed |
 |---|---|---|
 | Nested JSON structure in students.json | Required additional schema exploration | Used Spark schema inspection and documentation |
-| Multiple interview versions in Parquet data | | Required careful understanding of interview records | | Verified using profiling queries |
+| Multiple interview versions in Parquet data | Required careful understanding of interview records  | Verified using profiling queries |
 ---
 
 ## 5. Evidence Added to GitHub
