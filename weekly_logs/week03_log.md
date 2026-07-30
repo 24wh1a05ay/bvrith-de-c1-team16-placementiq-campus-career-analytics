@@ -20,7 +20,7 @@ Profile and understand the PlacementIQ source datasets before building the Bronz
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | Loaded students.json| Bharani | Done | 01_data_exploration.ipynb |
-| Loaded companies.csv | 	Bharani	|   Done	Notebook |
+| Loaded companies.csv | 	Bharani	|   Done |	Notebook |
 | Loaded skills.csv |	 Bharani | Done | Notebook |
 | Loaded interviews.parquet |	 Bharani	| Done |Notebook |
 | Verified schemas and data types | Chandana 	| Done | Spark printSchema() output |
