@@ -64,7 +64,9 @@ The goal for Week 5 was to transform the Bronze-layer data into clean and struct
 
 ## 6. AI Transparency Note
 | Where AI helped | AI was used to understand the Bronze-to-Silver transformation process, suggest SQL/PySpark approaches, and help troubleshoot transformation errors.|
+
 | What we verified manually | We manually checked schemas, record counts, null values, duplicate records, data types, and sample records after transformation.|
+
 | What we can explain without AI | We can explain the purpose of Bronze and Silver layers, data cleaning, schema validation, null handling, duplicate removal, and the overall ETL transformation process.|
 
 ---
