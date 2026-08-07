@@ -15,7 +15,6 @@ The goal for Week 5 was to transform the Bronze-layer data into clean and struct
 
 ## 2. Work Completed
 
-| Task | Owner | Status | Evidence |
 | Inspected Bronze tables and schemas | Bharani | Done | Databricks notebook | 
 | Checked record counts and data quality | Bharani | Done | Data exploration notebook | 
 | Identified missing and duplicate records | Bharani | one | Silver transformation notebook |
@@ -23,6 +22,7 @@ The goal for Week 5 was to transform the Bronze-layer data into clean and struct
 | Converted Bronze data into Silver-ready format | Bharani | Done | Silver tables |
 | Validated Silver table schema and records | Bharani | Done| Databricks screenshots |
 | Updated project documentation | Bharani | Done | GitHub Week 05 log |
+
 ---
 
 ## 3. Key Decisions
@@ -54,10 +54,9 @@ The goal for Week 5 was to transform the Bronze-layer data into clean and struct
 ---
 
 ## 6. AI Transparency Note
-Where AI helped - AI was used to understand the Bronze-to-Silver transformation process, suggest SQL/PySpark approaches, and help troubleshoot transformation errors.
-What we changed after AI suggestion - The suggested code and transformation logic were reviewed and modified according to our project's actual table names, columns, and requirements.
-What we verified manually - We manually checked schemas, record counts, null values, duplicate records, data types, and sample records after transformation.
-What we can explain without AI - We can explain the purpose of Bronze and Silver layers, data cleaning, schema validation, null handling, duplicate removal, and the overall ETL transformation process.
+| Where AI helped | AI was used to understand the Bronze-to-Silver transformation process, suggest SQL/PySpark approaches, and help troubleshoot transformation errors.|
+| What we verified manually | We manually checked schemas, record counts, null values, duplicate records, data types, and sample records after transformation.|
+| What we can explain without AI | We can explain the purpose of Bronze and Silver layers, data cleaning, schema validation, null handling, duplicate removal, and the overall ETL transformation process.|
 
 ---
 
