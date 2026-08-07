@@ -16,11 +16,17 @@ The goal for Week 5 was to transform the Bronze-layer data into clean and struct
 ## 2. Work Completed
 
 | Inspected Bronze tables and schemas | Bharani | Done | Databricks notebook | 
+
 | Checked record counts and data quality | Bharani | Done | Data exploration notebook | 
+
 | Identified missing and duplicate records | Bharani | one | Silver transformation notebook |
+
 | Cleaned and standardized candidate data | Bharani | Done | Silver candidate notebook |
+
 | Converted Bronze data into Silver-ready format | Bharani | Done | Silver tables |
+
 | Validated Silver table schema and records | Bharani | Done| Databricks screenshots |
+
 | Updated project documentation | Bharani | Done | GitHub Week 05 log |
 
 ---
@@ -36,8 +42,11 @@ The goal for Week 5 was to transform the Bronze-layer data into clean and struct
 
 ## 4. Blockers / Risks
 | Some Bronze data required cleaning and standardization | Could affect Silver-layer quality | Validate transformation rules |
+
 | Missing values in some columns | May affect downstream analysis | Apply suitable null-handling rules | 
+
 | Different data types/formats across source files | Could cause transformation errors | Schema validation and casting | 
+
 | Need to verify Silver tables against source data | Risk of losing or changing records incorrectly | Perform record-count and sample validation |
 
 
