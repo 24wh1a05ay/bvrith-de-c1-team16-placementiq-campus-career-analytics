@@ -46,8 +46,11 @@ Decided to perform testing after each major feature to identify and fix errors e
 ## 5. Evidence
 
 -Updated project source code.
+
 -Added screenshots showing the implemented functionality.
+
 -Updated project documentation/README.
+
 -Added or updated testing evidence where applicable.
 
 ## 6. AI Transparency Note
