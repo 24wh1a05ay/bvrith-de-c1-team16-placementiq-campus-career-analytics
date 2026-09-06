@@ -23,7 +23,7 @@ The sprint focuses on implementing 8 Gold tables, with one KPI per table, and va
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 |Reviewed Week 6 Trusted Silver and DQ outputs|	Bharani|	Done|	Week 6 DQ notebook / screenshots|
-|Defined Gold KPI contract	|Team 16|	Bharani|	Gold design notebook|
+|Defined Gold KPI contract	|bharani|	Done|	Gold design notebook|
 |Created Trusted application view by exploding nested applications|	Bharani|	Done|	Week 7 Gold SQL notebook|
 |Created Trusted offer view by exploding nested offers	|Bharani|Done	|Week 7 Gold SQL notebook|
 |Created Trusted interview view	|Bharani	|Done|	Week 7 Gold SQL notebook|
@@ -33,7 +33,7 @@ The sprint focuses on implementing 8 Gold tables, with one KPI per table, and va
 |Created gold_completed_interviews	|chandana	|Done|	Week 7 Gold notebook|
 |Created gold_selected_candidates	|chandana|	Done|	Week 7 Gold notebook|
 |Created gold_accepted_offers	|chandana|Done	|Week 7 Gold notebook|
-|Created gold_joined_candidates|	chgandana|Done|	Week 7 Gold notebook|
+|Created gold_joined_candidates|	chandana|Done|	Week 7 Gold notebook|
 |Created gold_average_compensation_lpa	|chandana	|Done	|Week 7 Gold notebook|
 |Validated KPI relationships and non-negative measures|	chandana	|Done|	Gold validation SQL|
 |Prepared consolidated KPI output for verification|	chandana|	Done	|Week 7 Gold notebook|
