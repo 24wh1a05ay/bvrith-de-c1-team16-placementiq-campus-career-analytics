@@ -1,8 +1,11 @@
 # Week 07 Log — Gold Aggregation
 
 **Week:** 7  
+
 **Date range:** 31/8/26 - 6/9/26
+
 **Team:** 16  
+
 **Project:** PlacementsIQ - Career Campus Analytics
 
 ---
@@ -52,11 +55,17 @@ Gold KPI Tables
 
 ## 3. Key Decisions
 - One KPI = one Gold table was selected to keep the Gold layer simple, clearly traceable, and easy to consume for dashboards and reporting.
+
 - Gold tables are built from Week 6 Trusted Silver data, rather than directly from Candidate or Quarantine data.
+
 - Nested applications and offers arrays from the trusted student data are exploded before calculating application and offer KPIs.
+
 - Interview KPIs are calculated from the trusted interview data.
+
 - COUNT(DISTINCT ...) is used for entity-level KPIs to reduce the impact of repeated nested records.
+
 - Invalid compensation values outside the controlled 0–30 LPA range are excluded from the average compensation calculation.
+
 - Each Gold table contains KPI metadata such as kpi_key, kpi_name, Gold creation timestamp, and Gold schema version.
 
 ---
@@ -65,10 +74,10 @@ Gold KPI Tables
 
 | Blocker | Impact | Help Needed |
 |---|---|---|
-Gold KPIs depend on the correctness of Week 6 Trusted Silver data	Incorrect Trusted data could affect KPI results	Continue DQ validation and correct upstream Candidate data when required
-Nested applications and offers require careful handling	Duplicate nested records could affect KPI calculations	Use distinct business identifiers and validate counts
-KPI definitions need to remain consistent across future sprints	Changes could make historical reporting inconsistent	Maintain the KPI contract and version the Gold schema
-Repeat-run consistency must be verified	Re-running the Gold pipeline should not create inconsistent results	Compare baseline and rerun output
+Gold KPIs depend on the correctness of Week 6 Trusted Silver data	|Incorrect Trusted data could affect KPI results	|Continue DQ validation and correct upstream Candidate data when required
+Nested applications and offers require careful handling|	Duplicate nested records could affect KPI calculations	|Use distinct business identifiers and validate counts
+KPI definitions need to remain consistent across future sprints	|Changes could make historical reporting inconsistent	|Maintain the KPI contract and version the Gold schema
+Repeat-run consistency must be verified|	Re-running the Gold pipeline should not create inconsistent results|	Compare baseline and rerun output
 
 ---
 
