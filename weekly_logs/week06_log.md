@@ -62,6 +62,9 @@ Decided to perform testing after each major feature to identify and fix errors e
 ---
 ## 7. NEXT WEEK PREPARATION
 -Complete remaining Gold Aggregation tasks.
+
 -Perform final data quality and validation checks.
+
 -Review the aggregated dataset with the team.
+
 -Prepare documentation and evidence for the next sprint.
