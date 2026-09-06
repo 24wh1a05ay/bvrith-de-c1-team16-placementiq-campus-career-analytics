@@ -1,8 +1,11 @@
 # Week 06 Log — DQ results
 
 **Week:** 6  
+
 **Date range:** 31/8/26 - 5/9/26
+
 **Team:** 16
+
 **Project:** PlacementsIQ - Career Campus Analytics
 
 ---
