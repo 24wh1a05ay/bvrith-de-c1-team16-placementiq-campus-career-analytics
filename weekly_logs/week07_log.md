@@ -40,16 +40,7 @@ The sprint focuses on implementing 8 Gold tables, with one KPI per table, and va
 
 
 
-## Gold KPI Tables
-|KPI Key	|Gold Table|	KPI|
-|KPI-001	|gold_total_applications	|Total Applications|
-|KPI-002	|gold_shortlisted_applications	|Shortlisted Applications|
-|KPI-003	|gold_total_interviews	|Total Interviews|
-|KPI-004	|gold_completed_interviews|	Completed Interviews|
-|PI-005	|gold_selected_candidates|	Selected Candidates|
-|KPI-006|	gold_accepted_offers	|Accepted Offers|
-|KPI-007|	gold_joined_candidates|	Joined Candidates|
-|KPI-008|	gold_average_compensation_lpa	|Average Compensation LPA|
+
 
 ---
 
