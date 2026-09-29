@@ -21,8 +21,8 @@ The goal of Week 09 was to refine and validate the Power BI dashboards created i
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | [Task] | [Student] | [Done / In progress] | [file / screenshot / notebook] |
-| Task                                                     | Owner   | Status | Evidence                      |
-| -------------------------------------------------------- | ------- | ------ | ----------------------------- |
+
+
 | Refined Student & Application Overview dashboard         | chandana | Done   | Page 1 screenshot             |
 | Refined Recruitment & Interview Analytics dashboard      | chandana | Done   | Page 2 screenshot             |
 | Improved chart titles and dashboard formatting           | bharani | Done   | Final dashboard screenshots   |
@@ -39,13 +39,21 @@ The goal of Week 09 was to refine and validate the Power BI dashboards created i
 ---
 
 ## 3. Key Decisions
+
 -Kept the two existing Power BI pages instead of creating unnecessary additional dashboard pages.
+
 -Kept Student & Application Overview focused on student applications, branches, application status, and outcomes.
+
 -Kept Recruitment & Interview Analytics focused on companies, interviews, interview modes, and interview results.
+
 -Used the approved Gold-layer tables as the source for dashboard metrics.
+
 -Refined existing visuals instead of overcrowding the dashboard with additional charts.
+
 -Used a Date Range slicer to allow users to analyze dashboard results for a selected period.
+
 -Tested important dashboard values against the corresponding Gold-layer data before finalizing the report.
+
 -Improved chart titles, spacing, formatting, and overall dashboard readability.
 
 ---
@@ -55,8 +63,6 @@ The goal of Week 09 was to refine and validate the Power BI dashboards created i
 | Blocker | Impact | Help Needed |
 |---|---|---|
 | [Blocker] | [Impact] | [Help needed] |
-| Blocker                                                                                  | Impact                                             | Help Needed                                                       |
-| ---------------------------------------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------- |
 | Some Power BI visuals initially used automatically generated titles and aggregations     | Reduced dashboard readability                      | Manually renamed and formatted the visuals                        |
 | Final Outcome visual initially displayed percentages instead of useful count comparisons | Made the outcome comparison difficult to interpret | Changed the visual configuration to show actual counts            |
 | Understanding the Date Range slicer and its interaction with dashboard visuals           | Could affect filtering accuracy                    | Tested the slicer using different date ranges                     |
