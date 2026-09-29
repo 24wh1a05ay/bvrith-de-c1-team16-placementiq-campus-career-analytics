@@ -37,11 +37,18 @@ The goal of Week 08 was to build and refine the Power BI dashboard using the app
 ## 3. Key Decisions
 
 -Used the approved Gold-layer tables as the main source for the Power BI dashboard.
+
+
 -Created separate dashboard pages for Student & Application Overview and Recruitment & Interview Analytics to avoid repeating the same analysis.
+
 -Used dimension tables such as DimCompany and DimDate for filtering and relationships.
+
 -Created measures for important KPIs instead of manually entering values into visuals.
+
 -Used slicers for date, branch, company, application status, and interview mode where applicable.
+
 -Kept the dashboard focused on meaningful business/recruitment insights instead of adding unnecessary visuals.
+
 -Used appropriate visual types such as cards, bar/column charts, donut charts, funnel charts, and area charts.
 
 ---
@@ -55,7 +62,7 @@ The goal of Week 08 was to build and refine the Power BI dashboard using the app
 |Selecting suitable visualizations for different metrics|	Some initial visuals did not communicate the data clearly	|Refined chart types and titles|
 |Some automatically generated Power BI values/titles were unclear	|Reduced dashboard readability|	Manually formatted titles, measures and visuals|
 |Need to ensure dashboard values match the Gold-layer data	|Risk of incorrect reporting |Values were checked against the relevant Gold tables|
-Understanding how slicers affect different visuals|	Could lead to incorrect interpretation of filtered results|	Tested slicers and dashboard interactions manually|
+|Understanding how slicers affect different visuals|	Could lead to incorrect interpretation of filtered results|	Tested slicers and dashboard interactions manually|
 
 ---
 
@@ -92,9 +99,15 @@ Understanding how slicers affect different visuals|	Could lead to incorrect inte
 
 ## 7. Next Week Preparation
 -Refine the existing Power BI dashboards based on testing and feedback.
+
 -Validate important dashboard KPIs against the corresponding Gold-layer tables.
+
 -Test slicers and filter interactions across both dashboard pages.
+
 -Document important dashboard insights with supporting evidence.
+
 -Improve dashboard formatting, readability, and consistency.
+
 -Prepare the dashboard documentation and screenshots required for the next sprint.
+
 -Prepare for the upcoming Week 09 dashboard validation, reconciliation, and documentation activities.
