@@ -55,8 +55,7 @@ The goal of Week 08 was to build and refine the Power BI dashboard using the app
 
 ## 4. Blockers / Risks
 
-| Blocker | Impact | Help Needed |
-|---|---|---|
+
 
 |Understanding the correct Power BI relationships between Gold and dimension tables	|Initially caused confusion while building the data model|	Verified relationship cardinality and filter direction|
 
