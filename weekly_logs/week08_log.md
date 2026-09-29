@@ -1,8 +1,11 @@
 # Week 08 Log — [Sprint Name]
 
 **Week:** 8  
+
 **Date range:** 21-9-26 to 27-9-26 
+
 **Team:** 16
+
 **Project:** PlacementIQ: Campus Career Analytics
 
 ---
