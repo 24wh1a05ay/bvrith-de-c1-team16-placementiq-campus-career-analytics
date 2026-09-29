@@ -61,13 +61,22 @@ Understanding how slicers affect different visuals|	Could lead to incorrect inte
 
 ## 5. Evidence Added to GitHub
 -Updated Power BI dashboard .pbix file.
+
 -Added screenshot of the Power BI Model view and relationships.
+
 -Added screenshot of Student & Application Overview.
+
 -Added screenshot of Recruitment & Interview Analytics.
+
 -Added screenshots showing slicer/filter interactions.
+
+
 -Added screenshots of important KPI cards and dashboard visuals.
+
 -Updated dashboard documentation/README.
+
 -Added relevant Week 08 dashboard evidence to the project repository.
+
 ---
 
 ## 6. AI Transparency Note
