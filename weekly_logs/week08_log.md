@@ -20,17 +20,17 @@ The goal of Week 08 was to build and refine the Power BI dashboard using the app
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 |Task|	Owner	|Status|	Evidence|
-|Connected approved Gold-layer tables to Power BI|	Team 16	|Done	|Power BI .pbix file
-|Created relationships between dimension and Gold/fact tables	|Team 16|	Done	|Power BI Model view screenshot
-|Created application-related measures|	Team 16|	Done|	Power BI measures|
-|Created recruitment and interview-related measures	|Team 16	|Done|	Power BI measures|
-|Designed Student & Application Overview dashboard	|Team 16|	Done|	Power BI Page 1 screenshot|
-|Designed Recruitment & Interview Analytics dashboard|	Team 16|	Done|	Power BI Page 2 screenshot|
-|Added slicers and filters	|Team 16|	Done|	Power BI dashboard screenshot|
-|Added KPI cards	|Team 16	|Done	|Power BI dashboard screenshot|
-|Added charts for branch, application status and outcomes|	Team 16|	Done|	Page 1 screenshot|
-|Added interview mode, interview result and company analysis visuals	|Team 16	|Done|	Page 2 screenshot|
-|Improved dashboard layout and visual titles	|Team 16	|Done|	Final dashboard screenshots|
+|Connected approved Gold-layer tables to Power BI|	chandana 	|Done	|Power BI .pbix file
+|Created relationships between dimension and Gold/fact tables	|chandana|	Done	|Power BI Model view screenshot
+|Created application-related measures|	chandana|	Done|	Power BI measures|
+|Created recruitment and interview-related measures	|chandana	|Done|	Power BI measures|
+|Designed Student & Application Overview dashboard	|chandana|	Done|	Power BI Page 1 screenshot|
+|Designed Recruitment & Interview Analytics dashboard|	bharani|	Done|	Power BI Page 2 screenshot|
+|Added slicers and filters	|chandana|	Done|	Power BI dashboard screenshot|
+|Added KPI cards	|chandana	|Done	|Power BI dashboard screenshot|
+|Added charts for branch, application status and outcomes|	bharani|	Done|	Page 1 screenshot|
+|Added interview mode, interview result and company analysis visuals	|bharani	|Done|	Page 2 screenshot|
+|Improved dashboard layout and visual titles	|bharani	|Done|	Final dashboard screenshots|
 
 ---
 
@@ -59,9 +59,13 @@ The goal of Week 08 was to build and refine the Power BI dashboard using the app
 |---|---|---|
 
 |Understanding the correct Power BI relationships between Gold and dimension tables	|Initially caused confusion while building the data model|	Verified relationship cardinality and filter direction|
+
 |Selecting suitable visualizations for different metrics|	Some initial visuals did not communicate the data clearly	|Refined chart types and titles|
+
 |Some automatically generated Power BI values/titles were unclear	|Reduced dashboard readability|	Manually formatted titles, measures and visuals|
+
 |Need to ensure dashboard values match the Gold-layer data	|Risk of incorrect reporting |Values were checked against the relevant Gold tables|
+
 |Understanding how slicers affect different visuals|	Could lead to incorrect interpretation of filtered results|	Tested slicers and dashboard interactions manually|
 
 ---
