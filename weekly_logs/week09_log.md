@@ -21,8 +21,6 @@ The goal of Week 09 was to refine and validate the Power BI dashboards created i
 | Task | Owner | Status | Evidence |
 |---|---|---|---|
 | [Task] | [Student] | [Done / In progress] | [file / screenshot / notebook] |
-
-
 | Refined Student & Application Overview dashboard         | chandana | Done   | Page 1 screenshot             |
 | Refined Recruitment & Interview Analytics dashboard      | chandana | Done   | Page 2 screenshot             |
 | Improved chart titles and dashboard formatting           | bharani | Done   | Final dashboard screenshots   |
