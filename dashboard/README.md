@@ -1,24 +1,93 @@
 # Power BI Dashboard Folder
 
-Save the final Power BI file here.
+# Power BI Dashboard
 
-Expected file:
+The final Power BI dashboard contains two refined report pages built using the approved Gold outputs only.
+
+## Dashboard Pages
+
+### Page 1 — Student & Application Overview
+
+Purpose:
+- Provide an overview of student applications and outcomes.
+- Show application volume, student distribution, shortlisting and acceptance.
+- Allow users to explore the dashboard using filters and date range selection.
+
+Main visuals:
+- Total Applications
+- Total Students
+- Shortlisted Applications
+- Accepted Applications
+- Students by Branch
+- Application Status
+- Final Application Outcomes
+- Top Companies by Applications
+
+Filters:
+- Application Status
+- Branch
+- Date Range
+
+---
+
+### Page 2 — Recruitment & Interview Analytics
+
+Purpose:
+- Analyse company recruitment and interview activity.
+- Show interview volume, completion, interview modes and interview results.
+- Provide company-level recruitment comparisons.
+
+Main visuals:
+- Total Interviews
+- Completed Interviews
+- Interviewing Companies
+- Selected Candidates
+- Interview Mode Distribution
+- Interview Results
+- Top Companies by Interviews
+- Completed Interviews by Company
+- Company Interview Summary
+
+Filters:
+- Date
+- Company
+- Interview Mode
+
+---
+
+## Gold Source Register
+
+Power BI connects only to approved Gold outputs.
+
+Gold sources used:
+
+- `Gold_CompletedInterviews.csv` — application-level Gold output
+- `Gold_Interviews.csv` — interviews by company and interview mode
+- `Gold_Shortlisted.csv` — shortlisted applications by company
+- `Gold_TotalApplications.csv` — total applications by company
+- `FactApplications.csv` — completed interviews by company and interview result
+
+No raw, Bronze or Silver datasets are connected directly to Power BI.
+
+---
+
+## Data Model
+
+The dashboard uses a dimensional model with `DimCompany` and `DimDate`.
+
+### Company relationships
 
 ```text
-dashboard/powerbi_dashboard.pbix
-```
-
-Rules:
-
-- Power BI must connect to Gold outputs only.
-- Do not connect dashboard visuals directly to raw source files.
-- Save dashboard screenshots in `screenshots/`.
-- Explain dashboard insights in `docs/dashboard_insights.md`.
-
-## Power BI File-Size Rule
-
-Preferred submission is the PBIX file plus screenshots.
-
-If the `.pbix` file becomes too large to manage cleanly in GitHub, keep the final screenshots and dashboard insight notes in this repo, and add a short note here explaining where the PBIX is stored for mentor review.
-
-Do not keep uploading multiple heavy PBIX versions into GitHub.
+DimCompany
+    |
+    | 1 : *
+    |
+    +---- FactApplications
+    |
+    +---- Gold_TotalApplications
+    |
+    +---- Gold_Shortlisted
+    |
+    +---- Gold_Interviews
+    |
+    +---- Gold_CompletedInterviews
