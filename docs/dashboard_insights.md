@@ -9,7 +9,7 @@
 
 | **Page** | **Purpose** | **Main Visuals** |
 |---|---|---|
-| **Page 1: Student & Application Overview** | Provides a high-level view of student applications, branches, application status, outcomes and company applications. | KPI cards, Treemap, Donut chart, Column chart, Bar chart, filters |
+| **Page 1: Student & Application Analytics** | Provides a high-level view of student applications, branches, application status, outcomes and company applications. | KPI cards, Treemap, Donut chart, Column chart, Bar chart, filters |
 | **Page 2: Recruitment & Interview Analytics** | Analyses company recruitment activity, interviews, interview modes, interview results and completed interviews. | KPI cards, Pie chart, Bar charts, Area chart, filters |
 
 ### Page 1 — Student & Application Overview
