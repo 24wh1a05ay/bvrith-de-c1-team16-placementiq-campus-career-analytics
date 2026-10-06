@@ -4,7 +4,7 @@ The final Power BI dashboard contains two refined report pages built using the a
 
 ## Dashboard Pages
 
-### Page 1 — Student & Application Overview
+### Page 1 — Student & Application Analytics
 
 Purpose:
 - Provide an overview of student applications and outcomes.
