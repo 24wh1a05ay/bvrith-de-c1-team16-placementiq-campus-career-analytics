@@ -1,7 +1,5 @@
 # Power BI Dashboard Folder
 
-# Power BI Dashboard
-
 The final Power BI dashboard contains two refined report pages built using the approved Gold outputs only.
 
 ## Dashboard Pages
