@@ -1,46 +1,38 @@
 # Structured Streaming Design
 
 **Week:** 10  
-**Purpose:** Explain the streaming simulation.
+**Project:** PlacementIQ — Campus Career Analytics  
+**Purpose:** Explain the SQL-first Structured Streaming simulation using Databricks Auto Loader.
 
 ---
 
 ## 1. Streaming Scenario
 
-Describe the event flow.
+The PlacementIQ streaming simulation demonstrates incremental arrival and processing of recruitment application events.
 
-Example:
+Synthetic PlacementIQ application JSON files are placed into a source folder. Individual event drops are then copied into a streaming landing folder. Databricks Auto Loader detects the newly arriving JSON files and Structured Streaming processes them incrementally.
 
-> New JSON event files arrive in a streaming input path. Databricks Auto Loader detects the files, Structured Streaming processes them, and the output is written to a Streaming Bronze table.
+The processed records are written to the Streaming Bronze table:
 
----
+`bronze_placementiq_application_events_stream`
 
-## 2. Event Source
+The notebook uses an `AvailableNow` trigger so that all files available at the time of execution are processed and the streaming query then stops. This makes the streaming simulation reproducible and suitable for a weekly project demonstration.
 
-| Item | Description |
-|---|---|
-| Event file format | JSON |
-| Input path | `/Volumes/workspace/default/<project_name>/streaming_input/` |
-| Processing method | Auto Loader / Structured Streaming |
-| Output table | `bronze_streaming_events` |
-| Checkpoint path | `/Volumes/workspace/default/<project_name>/checkpoints/...` |
+### Event Flow
 
----
-
-## 3. Near-Real-Time Metric
-
-Define one simple live metric.
-
-Example:
-
-| Metric | Formula | Use |
-|---|---|---|
-| Event count by severity | Count events grouped by severity | Shows alert pressure |
-
----
-
-## 4. Limitations
-
-- This is a student streaming simulation, not a production event platform.
-- Kafka is documented as production architecture awareness only.
-- Streaming events are synthetic and educational.
+```text
+PlacementIQ Application JSON Drops
+                ↓
+        week09_source/
+                ↓
+        week09_landing/
+                ↓
+          Auto Loader
+                ↓
+      Structured Streaming
+                ↓
+bronze_placementiq_application_events_stream
+                ↓
+       SQL Validation
+                ↓
+ Recruitment Metrics / Power BI
